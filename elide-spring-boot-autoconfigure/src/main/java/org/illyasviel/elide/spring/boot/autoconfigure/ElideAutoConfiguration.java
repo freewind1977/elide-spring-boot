@@ -91,7 +91,7 @@ public class ElideAutoConfiguration {
         .withDefaultPageSize(elideProperties.getDefaultPageSize())
         .withDefaultMaxPageSize(elideProperties.getMaxPageSize())
         .withReturnErrorObjects(elideProperties.isReturnErrorObjects())
-        .withISO8601Dates(elideProperties.getDataFormat(),
+        .withISO8601Dates(elideProperties.getDateFormat(),
             TimeZone.getTimeZone(elideProperties.getTimeZone()))
         .build());
 
