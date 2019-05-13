@@ -48,6 +48,8 @@ elide:
   max-page-size: 100
   spring-dependency-injection: true
   return-error-objects: false
+  date-format: "yyyy-MM-dd'T'HH:mm'Z'"
+  time-zone: "UTC"
   mvc:
     enable: true
     get: true

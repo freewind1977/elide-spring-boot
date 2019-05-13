@@ -30,6 +30,8 @@ public class ElideProperties {
   private String prefix = "/api";
   private int defaultPageSize = 20;
   private int maxPageSize = 100;
+  private String dateFormat = "yyyy-MM-dd'T'HH:mm'Z'";
+  private String timeZone = "UTC";
   /**
    * Allow inject bean in entity model class.
    */

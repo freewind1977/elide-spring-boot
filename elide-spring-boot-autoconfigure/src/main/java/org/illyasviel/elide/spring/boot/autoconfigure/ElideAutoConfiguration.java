@@ -27,6 +27,7 @@ import com.yahoo.elide.jsonapi.JsonApiMapper;
 import com.yahoo.elide.security.checks.Check;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
+import java.util.TimeZone;
 import java.util.concurrent.ConcurrentHashMap;
 import javax.persistence.EntityManager;
 import org.atteo.classindex.ClassIndex;
@@ -90,6 +91,8 @@ public class ElideAutoConfiguration {
         .withDefaultPageSize(elideProperties.getDefaultPageSize())
         .withDefaultMaxPageSize(elideProperties.getMaxPageSize())
         .withReturnErrorObjects(elideProperties.isReturnErrorObjects())
+        .withISO8601Dates(elideProperties.getDataFormat(),
+            TimeZone.getTimeZone(elideProperties.getTimeZone()))
         .build());
 
     // scan life cycle hooks
