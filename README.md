@@ -41,6 +41,13 @@ Check out the [elide-spring-boot-sample](elide-spring-boot-sample).
 
 The following shows all the default properties.
 
+### 配置新增说明:
+
+1.date-format、time-zone两个配置项,可以增加时区设置,使用的elide增加对时间参数的查询
+2.下面的配置为代码默认的配置,可根据情况自行调整
+
+** 示例,请参照<a href="https://blog.olowolo.com/post/generate-json-api-and-graphql-api-by-elide-and-spring/">使用 Elide 与 Spring 自动生成 JSON API / GraphQL API</a> **
+
 ```yaml
 elide:
   prefix: "/api"
