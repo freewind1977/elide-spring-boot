@@ -71,15 +71,14 @@
       <!--<id>ossrh</id>-->
       <!--<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>-->
     <!--</repository>-->
-    <!--更换上传仓库的地址-->
-    <repository>
-      <id>rdc-releases</id>
-      <url>https://repo.rdc.aliyun.com/repository/72767-release-ox2rFf/</url>
-    </repository>
-    <snapshotRepository>
-      <id>rdc-snapshots</id>
-      <url>https://repo.rdc.aliyun.com/repository/72767-snapshot-m15Qkm/</url>
-    </snapshotRepository>
+      <repository>
+        <id>botera-rdc-releases</id>
+        <url>https://repo.rdc.aliyun.com/repository/72033-release-eY0MKf/</url>
+      </repository>
+      <snapshotRepository>
+        <id>botera-rdc-snapshots</id>
+        <url>https://repo.rdc.aliyun.com/repository/72033-snapshot-c2rNlM/</url>
+      </snapshotRepository>
   </distributionManagement>
 
   <issueManagement>
@@ -259,15 +258,15 @@
 
   <profiles>
     <profile>
-      <id>rdc-private-repo</id>
+      <id>botera-rdc-private-repo</id>
       <repositories>
         <repository>
-          <id>rdc-releases</id>
-          <url>https://repo.rdc.aliyun.com/repository/72767-release-ox2rFf/</url>
+          <id>botera-rdc-releases</id>
+          <url>https://repo.rdc.aliyun.com/repository/72033-release-eY0MKf/</url>
         </repository>
         <repository>
-          <id>rdc-snapshots</id>
-          <url>https://repo.rdc.aliyun.com/repository/72767-snapshot-m15Qkm/</url>
+          <id>botera-rdc-snapshots</id>
+          <url>https://repo.rdc.aliyun.com/repository/72033-snapshot-c2rNlM/</url>
         </repository>
       </repositories>
     </profile>
